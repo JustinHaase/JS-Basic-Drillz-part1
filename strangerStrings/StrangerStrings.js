@@ -5,15 +5,35 @@ class StrangerStrings {
     }
 
     concatenation(firstSegment, secondSegment){
-        return null;
+        return firstSegment.concat(secondSegment);
     }
 
     getPrefix(input){
-        return null;
+        //count first 3 char of Wurd
+    
+        //get first char of Wurd
+        let firstLetter = input[0]
+        //get second char of Wurd
+        let secondLetter = input[1]
+        //get third char of Wurd
+        let thirdLetter = input[2]
+
+        return firstLetter + secondLetter + thirdLetter;
+    
     }
 
     getSuffix(input){
-        return null;
+        //count last 3 char of Wurd
+    
+        //get thirdlast char of Wurd
+        let lastLetter = input[input.length - 1];
+        //get secondlast char of Wurd
+        let secondLastLetter = input[input.length - 2];
+        //get last char of Wurd
+        let thirdLastLetter = input[input.length - 3];
+
+        return thirdLastLetter + secondLastLetter + lastLetter;
+        
     }
 
     getMiddleCharacter(input){
