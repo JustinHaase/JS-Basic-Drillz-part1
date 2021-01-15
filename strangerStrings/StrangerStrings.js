@@ -37,10 +37,25 @@ class StrangerStrings {
     }
 
     getMiddleCharacter(input){
-        return null;
+        //count all char of Wurd
+        //divide char count by 2
+        //subtract remaining value from input.length
+        //if char count is an odd number, display value
+        
+        let wordLength = input.length;
+        let middleLetter = Math.floor(wordLength/2);
+        if(wordLength % 2 == 0){
+            return input[middleLetter - 1] + input[middleLetter];
+        } else {
+            return input[middleLetter];
+        }
+        
     }
 
     getFirstWord(input){
+        //count all char of Wurd
+        //add all char in return
+        let str = ""
         return null;
     }
     
